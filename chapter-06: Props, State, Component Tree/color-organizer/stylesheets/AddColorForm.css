@@ -1,0 +1,17 @@
+form.add-color {
+  width: 100%;
+  display: flex; }
+  form.add-color > :first-child {
+    flex-grow: 1; }
+  form.add-color input, form.add-color button {
+    margin: .5em;
+    padding: .25em;
+    font-size: 1.2em;
+    border-radius: 5px; }
+  form.add-color input[type="color"] {
+    padding: 0;
+    height: +2em; }
+  form.add-color button {
+    background-color: green;
+    color: white;
+    border: none; }
