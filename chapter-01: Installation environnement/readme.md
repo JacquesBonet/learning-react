@@ -54,7 +54,7 @@ optionally install one of these version mangers:
 Installing create-react-app
 --------------------------------
 
-* [Create React App] (https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh?hl=en-US)
+* Create React App (https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh?hl=en-US)
 
 --------------------------------
 
