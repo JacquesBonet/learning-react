@@ -51,6 +51,13 @@ optionally install one of these version mangers:
 
 --------------------------------
 
+Installing create-react-app
+--------------------------------
+
+* [Create React App] (https://chrome.google.com/webstore/detail/react-detector/jaaklebbenondhkanegppccanebkdjlh?hl=en-US)
+
+--------------------------------
+
 Installing the React Tools
 --------------------------------
 Next, there are some Chrome developer extensions or Firefox add-ons that you will need to install in order to debug React:
