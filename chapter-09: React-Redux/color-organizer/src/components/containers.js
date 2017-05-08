@@ -1,16 +1,16 @@
-import { connect } from 'react-redux'
-import AddColorForm from './ui/AddColorForm'
-import SortMenu from './ui/SortMenu'
-import ColorList from './ui/ColorList'
-import { addColor, sortColors, rateColor, removeColor } from '../actions'
-import { sortFunction } from '../lib/array-helpers'
+import {connect} from "react-redux";
+import AddColorForm from "./ui/AddColorForm";
+import SortMenu from "./ui/SortMenu";
+import ColorList from "./ui/ColorList";
+import {addColor, rateColor, removeColor, sortColors} from "../actions";
+import {sortFunction} from "../lib/array-helpers";
 
 export const NewColor = connect(
     null,
     dispatch =>
         ({
             onNewColor(title, color) {
-                dispatch(addColor(title,color))
+                dispatch(addColor(title, color))
             }
         })
 )(AddColorForm)

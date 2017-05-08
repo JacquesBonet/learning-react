@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import { getClockTime } from './lib'
 
 export default class Clock extends Component {

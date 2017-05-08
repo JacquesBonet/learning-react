@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white; }
+  nav h1 {
+    display: none; }
+  nav a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding: .5em; }
+    nav a.selected {
+      color: #900; }

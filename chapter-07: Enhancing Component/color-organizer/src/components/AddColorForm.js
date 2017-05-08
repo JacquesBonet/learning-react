@@ -1,5 +1,6 @@
-import { PropTypes, Component } from 'react'
-import '../../stylesheets/AddColorForm.scss'
+import React from 'react'
+import PropTypes  from 'prop-types'
+import '../../stylesheets/AddColorForm.css'
 
 const AddColorForm = ({onNewColor=f=>f}) => {
 

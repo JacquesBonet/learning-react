@@ -1,9 +1,10 @@
-import { PropTypes, Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import React, {Component} from "react";
+import { withRouter } from 'react-router'
+import PropTypes from "prop-types";
 import StarRating from './StarRating'
 import TimeAgo from './TimeAgo'
 import FaTrash from 'react-icons/lib/fa/trash-o'
-import '../../stylesheets/Color.scss'
+import '../../stylesheets/Color.css'
 
 class Color extends Component {
 

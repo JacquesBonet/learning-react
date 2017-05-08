@@ -1,6 +1,7 @@
-import { PropTypes } from 'react'
+import React from "react";
+import PropTypes from "prop-types";
 import { NavLink } from 'react-router-dom'
-import '../../stylesheets/Menu.scss'
+import '../../stylesheets/Menu.css'
 
 const selectedStyle = { color: 'red' }
 

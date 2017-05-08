@@ -1,5 +1,6 @@
-import { PropTypes } from 'react'
-import '../../../stylesheets/Menu.scss'
+import React from "react";
+import PropTypes from "prop-types";
+import "../../../stylesheets/Menu.css";
 
 const options = {
     date: "SORTED_BY_DATE",
@@ -7,7 +8,7 @@ const options = {
     rating: "SORTED_BY_RATING"
 }
 
-const SortMenu = ({ sort="SORTED_BY_DATE", onSelect=f=>f}) =>
+const SortMenu = ({sort = "SORTED_BY_DATE", onSelect = f => f}) =>
     <nav className="menu">
         <h1>Sort Colors</h1>
         {Object.keys(options).map((item, i) =>

@@ -1,6 +1,7 @@
-import { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import StarRating from './StarRating'
-import '../../stylesheets/Color.scss'
+import '../../stylesheets/Color.css'
 
 class Color extends Component {
 

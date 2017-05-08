@@ -16,14 +16,14 @@ const getDiff = (timestamp, now) => toDate(now) - toDate(timestamp)
 
 const isUnderTime = (diff, timeframe, time) => diff / timeframe < time
 
-const diffOverTimeframe = (diff, timeframe) => Math.floor(diff/timeframe)
+const diffOverTimeframe = (diff, timeframe) => Math.floor(diff / timeframe)
 
 const printResult = (result, timeframeName) =>
     `${result} ${timeframeName + ((result > 1) ? "s" : "")}`
 
 const checkDate = (diff, timeframeName, underTime, timeframe) =>
     (isUnderTime(diff, timeframe[timeframeName], underTime)) ?
-        printResult(diffOverTimeframe(diff,timeframe[timeframeName]), timeframeName) :
+        printResult(diffOverTimeframe(diff, timeframe[timeframeName]), timeframeName) :
         null
 
 const printFullDate = dateTime =>
@@ -32,7 +32,7 @@ const printFullDate = dateTime =>
 const lessThanAMinute = timeString =>
     (timeString.match(/seconds/)) ?
         "less than a minute" :
-    timeString + ' ago'
+        timeString + ' ago'
 
 const _checkNext = (result, callback) =>
     (result) ?
