@@ -1,4 +1,5 @@
 html, body, div#react-container {
+  height: 100%;
   min-height: 100%; }
 
 h1 {
@@ -10,10 +11,12 @@ body {
   padding: 0;
   background: white;
   background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
-  body div.app {
-    display: flex;
-    flex-direction: column;
-    height: 100%; }
 
 input {
   outline: none; }
+
+div.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: scroll; }
