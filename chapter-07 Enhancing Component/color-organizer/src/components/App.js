@@ -41,7 +41,7 @@ export default class App extends Component {
         this.removeColor = this.removeColor.bind(this)
     }
 
-    addColor(title, color) {
+    addColor({title, color}) {
         const colors = [
             ...this.state.colors,
             {
@@ -54,14 +54,19 @@ export default class App extends Component {
         this.setState({colors})
     }
 
+
     rateColor(id, rating) {
+        this.updateColor( id, {rating})
+    }
+
+    updateColor(id, updatedAttributes) {
         const colors = this.state.colors.map(color =>
             (color.id !== id) ?
                 color :
-            {
-                ...color,
-                rating
-            }
+                {
+                    ...color,
+                    ...updatedAttributes
+                }
         )
         this.setState({colors})
     }

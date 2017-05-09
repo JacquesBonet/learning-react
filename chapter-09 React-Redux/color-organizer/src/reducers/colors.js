@@ -8,7 +8,7 @@ export const colors = (state = [], action) => {
                 ...state,
                 action.payload
             ]
-        case C.RATE_COLOR :
+        case C.UPDATE_COLOR :
             return state.map(c => {
                     if (c.id === action.payload.id)
                         return {...c, ...action.payload}

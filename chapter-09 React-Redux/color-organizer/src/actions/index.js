@@ -23,7 +23,7 @@ export const removeColor = id =>
 
 export const rateColor = (id, rating) =>
     ({
-        type: C.RATE_COLOR,
+        type: C.UPDATE_COLOR,
         payload: {
             id,
             rating

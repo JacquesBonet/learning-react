@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { v4 } from 'uuid'
-import AddColorForm from './AddColorForm'
-import ColorList from './ColorList'
-import '../../stylesheets/APP.css'
+import React, {Component} from "react";
+import {v4} from "uuid";
+import AddColorForm from "./AddColorForm";
+import ColorList from "./ColorList";
+import "../../stylesheets/APP.css";
 
 export default class App extends Component {
 
@@ -47,14 +47,17 @@ export default class App extends Component {
     }
 
     render() {
-        const { addColor, rateColor, removeColor } = this
-        const { colors } = this.state
+        const {addColor, rateColor, removeColor} = this
+        const {colors} = this.state
         return (
             <div className="app">
-                <AddColorForm onNewColor={addColor} />
-                <ColorList colors={colors}
-                           onRate={rateColor}
-                           onRemove={removeColor} />
+                <AddColorForm onNewColor={addColor}/>
+                {(colors.length === 0) ?
+                    <p>No Colors Listed. (Add a Color)</p> :
+                    <ColorList colors={colors}
+                               onRate={rateColor}
+                               onRemove={removeColor}/>
+                }
             </div>
         )
     }
