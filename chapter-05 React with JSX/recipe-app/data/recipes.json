@@ -9,7 +9,7 @@
             { "name": "Olive Oil", "amount": 0.5, "measurement": "cup" },
             { "name": "Garlic", "amount": 3, "measurement": "cloves" }
         ],
-        "difficulte":0,
+        "difficulte":1,
         "steps": [
             "Preheat the oven to 350 degrees.",
             "Spread the olive oil around a glass baking dish.",
