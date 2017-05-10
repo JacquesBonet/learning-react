@@ -9,6 +9,7 @@
             { "name": "Olive Oil", "amount": 0.5, "measurement": "cup" },
             { "name": "Garlic", "amount": 3, "measurement": "cloves" }
         ],
+        "difficulte":0,
         "steps": [
             "Preheat the oven to 350 degrees.",
             "Spread the olive oil around a glass baking dish.",
@@ -27,6 +28,7 @@
             { "name": "Tomatoes", "amount": 2, "measurement": "large"},
             { "name": "Tortillas", "amount": 3, "measurement": "med" }
         ],
+        "difficulte":4,
         "steps": [
             "Cook the fish on the grill until hot.",
             "Place the fish on the 3 tortillas.",
