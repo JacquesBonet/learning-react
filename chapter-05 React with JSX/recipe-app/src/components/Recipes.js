@@ -2,7 +2,7 @@ import React from "react";
 import Recipe from "./Recipe";
 import "../../stylesheets/Menu.css";
 
-const Menu = ({recipes}) =>
+const Recipes = ({recipes}) =>
     <article>
         <header>
             <h1>Delicious Recipes</h1>
@@ -15,6 +15,6 @@ const Menu = ({recipes}) =>
         </div>
     </article>
 
-Menu.displayName = 'Menu'
+Recipes.displayName = 'Menu'
 
-export default Menu
+export default Recipes
