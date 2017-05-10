@@ -2,14 +2,15 @@ import React from "react";
 import Recipe from "./Recipe";
 import "../../stylesheets/Menu.css";
 
-const Recipes = ({recipes}) =>
+
+const Recipes = ({donnees}) =>
     <article>
         <header>
             <h1>Delicious Recipes</h1>
         </header>
         <div className="recipes">
             {
-                recipes.map((recipe, i) =>
+                donnees.map((recipe, i) =>
                     <Recipe key={i} {...recipe} />)
             }
         </div>
@@ -18,3 +19,6 @@ const Recipes = ({recipes}) =>
 Recipes.displayName = 'Menu'
 
 export default Recipes
+
+
+

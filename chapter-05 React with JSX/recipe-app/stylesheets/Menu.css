@@ -25,6 +25,10 @@ article>header {
     margin-bottom: 1em;
 }
 
+section.difficulty {
+    margin-bottom: 1em;
+}
+
 div.recipes>section {
     border: double 4px saddlebrown;
     padding: 1em;

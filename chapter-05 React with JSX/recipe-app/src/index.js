@@ -4,6 +4,6 @@ import Recipes from './components/Recipes'
 import data from '../data/recipes'
 
 render(
-    <Recipes recipes={data} />,
+    <Recipes donnees={data} />,
     document.getElementById("react-container")
 )
