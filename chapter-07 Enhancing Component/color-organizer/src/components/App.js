@@ -37,26 +37,20 @@ export default class App extends Component {
             ]
         }
         this.addColor = this.addColor.bind(this)
-        this.rateColor = this.rateColor.bind(this)
+        this.updateColor = this.updateColor.bind(this)
         this.removeColor = this.removeColor.bind(this)
     }
 
-    addColor({title, rgb}) {
+    addColor(color) {
         const colors = [
             ...this.state.colors,
             {
                 id: v4(),
-                title,
-                rgb,
-                rating: 0
+                rating: 0,
+                ...color
             }
         ]
         this.setState({colors})
-    }
-
-
-    rateColor(id, rating) {
-        this.updateColor( id, {rating})
     }
 
     updateColor(id, newColor) {
@@ -77,15 +71,15 @@ export default class App extends Component {
     }
 
     render() {
-        const { addColor, rateColor, removeColor } = this
-        const { colors } = this.state
+        const {addColor, removeColor, updateColor} = this
+        const {colors} = this.state
         return (
             <div className="app">
                 <AddColorForm onNewColor={addColor}/>
                 {(colors.length === 0) ?
                     <p>No Colors Listed. (Add a Color)</p> :
                     <ColorList colors={colors}
-                               onRate={rateColor}
+                               onUpdate={updateColor}
                                onRemove={removeColor}/>
                 }
             </div>
