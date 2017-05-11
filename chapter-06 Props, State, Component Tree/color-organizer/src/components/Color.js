@@ -4,7 +4,7 @@ import StarRating from './StarRating'
 import SmartTitle from './SmartTitle'
 
 
-export default class Color extends Component {
+class Color extends Component {
 
     constructor(props) {
         super(props)
@@ -19,7 +19,7 @@ export default class Color extends Component {
     }
 
     render() {
-        const {title, rating, onUpdate} = this.props
+        const {title, rating, onRemove} = this.props
 
         return (
             <section>
