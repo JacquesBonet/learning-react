@@ -6,14 +6,14 @@ class SmartTitle extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            input: false,
+            modInput: false,
             title: props.title
         }
     }
 
     onChangeTitle( e) {
         if (e.key === 'Enter') {
-            this.setState({input: false})
+            this.setState({modInput: false, title: e.target.value})
             this.props.onChangeTitle(e.target.value)
         }
         else
@@ -21,15 +21,15 @@ class SmartTitle extends Component {
     }
 
     onClick() {
-        this.setState( {input: true})
+        this.setState( {modInput: true})
     }
 
     render() {
-        const {input, title} = this.state
+        const {modInput, title} = this.state
 
         return (
             <div className="smartTitle">
-                {(input) ?
+                {(modInput) ?
                     <input ref="title" type="text" defaultValue={title} required onKeyPress={(e) => this.onChangeTitle(e)}/> :
                     <div onClick={(e) => this.onClick(e)}>{title}</div>
                 }

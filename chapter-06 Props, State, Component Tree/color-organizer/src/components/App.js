@@ -12,9 +12,8 @@ export default class App extends Component {
             colors: []
         }
         this.addColor = this.addColor.bind(this)
-        this.rateColor = this.rateColor.bind(this)
+        this.updateColor = this.updateColor.bind(this)
         this.removeColor = this.removeColor.bind(this)
-        this.changeTitle = this.changeTitle.bind(this)
     }
 
     addColor(title, color) {
@@ -30,25 +29,13 @@ export default class App extends Component {
         this.setState({colors})
     }
 
-    rateColor(id, rating) {
+    updateColor(id, newColor) {
         const colors = this.state.colors.map(color =>
             (color.id !== id) ?
                 color :
                 {
                     ...color,
-                    rating
-                }
-        )
-        this.setState({colors})
-    }
-
-    changeTitle(id, title) {
-        const colors = this.state.colors.map(color =>
-            (color.id !== id) ?
-                color :
-                {
-                    ...color,
-                    title
+                    ...newColor
                 }
         )
         this.setState({colors})
@@ -60,7 +47,7 @@ export default class App extends Component {
     }
 
     render() {
-        const {addColor, rateColor, removeColor, changeTitle} = this
+        const {addColor, removeColor, updateColor} = this
         const {colors} = this.state
         return (
             <div className="app">
@@ -68,8 +55,7 @@ export default class App extends Component {
                 {(colors.length === 0) ?
                     <p>No Colors Listed. (Add a Color)</p> :
                     <ColorList colors={colors}
-                               onRate={rateColor}
-                               onChangeTitle={changeTitle}
+                               onUpdate={updateColor}
                                onRemove={removeColor}/>
                 }
             </div>
