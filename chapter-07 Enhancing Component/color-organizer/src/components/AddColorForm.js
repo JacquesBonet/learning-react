@@ -8,7 +8,7 @@ const AddColorForm = ({onNewColor=f=>f}) => {
 
     const submit = e => {
         e.preventDefault()
-        onNewColor( {value: _title.value, color: _color.value})
+        onNewColor( {title: _title.value, rgb: _color.value})
         _title.value = ''
         _color.value = '#000000'
         _title.focus()

@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import StarRating from './StarRating'
+import SmartTitle from './SmartTitle'
 
-const Color = ({ title, color, rating=0, onRemove=f=>f, onRate=f=>f}) =>
+const Color = ({ title, color, rating=0, onRemove=f=>f, onRate=f=>f, onChangeTitle=f=>f}) =>
     <section>
-        <h1>{title}</h1>
+        <SmartTitle title={title} onChangeTitle={onChangeTitle}/>
         <button onClick={onRemove}>X</button>
         <div>
             <StarRating starsSelected={rating} onRate={onRate}/>

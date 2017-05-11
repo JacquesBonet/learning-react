@@ -29,6 +29,10 @@ section.difficulty {
     margin-bottom: 1em;
 }
 
+.header {
+    background-color: rgba(0,0,0,0.5)
+}
+
 div.recipes>section {
     border: double 4px saddlebrown;
     padding: 1em;
