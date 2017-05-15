@@ -4,41 +4,28 @@ import StarRating from './StarRating'
 import SmartTitle from './SmartTitle'
 
 
-class Color extends Component {
-
-    constructor(props) {
-        super(props)
-    }
-
-    rateColor(rating) {
-        this.props.onUpdate( this.props.id, {rating})
-    }
-
-    changeTitle(title) {
-        this.props.onUpdate( this.props.id, {title})
-    }
-
-    onRemove() {
-        this.props.onRemove( this.props.id)
-    }
-
-    render() {
-        const {title, rating} = this.props
-
-        return (
-            <section>
-                <SmartTitle title={title} onChangeTitle={title => this.changeTitle(title)}/>
-                <button onClick={() => this.onRemove()}>X</button>
-                <div>
-                    <StarRating starsSelected={rating} onRate={ rate => this.rateColor(rate)}/>
-                </div>
-            </section>
-        )
-    }
-}
+/**
+ * Color Component
+ *
+ * @param id            Color sequence number
+ * @param rating        Color rating
+ * @param title         Color Title
+ * @param onRemove      Notification to remove Color
+ * @param onUpdate      Notification to updateColor
+ * @constructor
+ */
+const Color = ({ id, rating = 0, title, onRemove = f => f, onUpdate = f => f}) =>
+    <section>
+        <SmartTitle title={title} onChangeTitle={title => onUpdate( id, {title})}/>
+        <button onClick={() => onRemove(id)}>X</button>
+        <div>
+            <StarRating starsSelected={rating} onRate={ rating => onUpdate( id, {rating})}/>
+        </div>
+    </section>
 
 Color.propTypes = {
-    title: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
     rating: PropTypes.number,
     onRemove: PropTypes.func,
     onUpdate: PropTypes.func
@@ -46,4 +33,3 @@ Color.propTypes = {
 }
 
 export default Color
-

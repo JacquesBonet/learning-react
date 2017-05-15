@@ -1,0 +1,17 @@
+Lundi:
+
+Terminer projet news
+____________________
+
+
+- aborder router, voir prime
+
+- integrer composant news dans prime
+
+- rajouter composant recherche, sort
+
+
+Mardi, Mercredi, Jeudi
+______________________
+
+Redux, CRUD

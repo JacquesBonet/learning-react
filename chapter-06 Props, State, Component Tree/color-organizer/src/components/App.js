@@ -16,13 +16,13 @@ export default class App extends Component {
         this.removeColor = this.removeColor.bind(this)
     }
 
-    addColor(title, color) {
+    addColor(title, rgb) {
         const colors = [
             ...this.state.colors,
             {
                 id: v4(),
                 title,
-                color,
+                rgb,
                 rating: 0
             }
         ]

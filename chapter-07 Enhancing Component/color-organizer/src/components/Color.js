@@ -18,13 +18,12 @@ class Color extends Component {
     componentWillUpdate(nextProps) {
         const { title, rating } = this.props
         this.style = null
-//        alert(`${title}: rating ${rating} -> ${nextProps.rating}`)
+        alert(`${title}: rating ${rating} -> ${nextProps.rating}`)
     }
 
     componentDidUpdate(prevProps) {
-        const { title, rating } = this.props
         const status = (rating > prevProps.rating) ? 'better' : 'worse'
-//        console.log(`${title} is getting ${status}`)
+        console.log(`${title} is getting ${status}`)
     }
     
     rateColor(rating) {
