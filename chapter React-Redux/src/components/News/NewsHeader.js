@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../../scss/news/News.scss";
 
 
 export const NewsHeader = ({title, urlToImage}) =>
-    <div className="news-header">
-        <img alt="" className="image" src={urlToImage}/>
-        <h1>{title}</h1>
+    <div className="card-header">
+        <img alt="" className="img-fluid" src={urlToImage}/>
+        <h4>{title}</h4>
     </div>
 
 

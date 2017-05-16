@@ -12,6 +12,7 @@
   "dependencies": {
     "chart.js": "2.5.0",
     "create-react-class": "^15.5.3",
+    "prop-types": "^15.5.10",
     "react": "15.4.2",
     "react-addons-css-transition-group": "15.5.0",
     "react-addons-transition-group": "15.5.0",
@@ -19,10 +20,12 @@
     "react-chartjs-2": "2.0.5",
     "react-dom": "^15.4.2",
     "react-ladda": "5.0.6",
+    "react-redux": "^5.0.4",
     "react-router": "^3.0.3",
     "react-select": "^1.0.0-rc.3",
     "react-text-mask": "4.1.0",
-    "reactstrap": "4.5.0"
+    "reactstrap": "4.5.0",
+    "redux": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

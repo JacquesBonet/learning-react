@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header/';
+import Header from '../Header/Header';
 import Sidebar from '../../components/Sidebar/';
 import Aside from '../../components/Aside/';
-import Footer from '../../components/Footer/';
+//import Footer from '../../components/Footer/';
 
 import Breadcrumbs from 'react-breadcrumbs';
 
@@ -28,7 +28,6 @@ class Full extends Component {
           </main>
           <Aside />
         </div>
-        <Footer />
       </div>
     );
   }
