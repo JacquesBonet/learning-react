@@ -38,7 +38,7 @@ article.news {
       float: left;
       color: #0e6dcd;
       cursor: pointer;
-      margin-right: 65px;
+      margin-right: 75px;
       font-size: 14px; }
     article.news div.news-footer span.published-at {
       right: 0px;
