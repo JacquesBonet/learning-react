@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 
 export const NewsContent = ({description}) =>
-    <div className="news-content">
+    <div className="card-block">
         <div className="description">{description}</div>
     </div>
 

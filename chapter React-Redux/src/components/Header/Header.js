@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Select from 'react-select'
 
 class Header extends Component {
 
@@ -17,6 +18,10 @@ class Header extends Component {
     document.body.classList.toggle('aside-menu-hidden');
   }
 
+  handleOnChange() {
+
+  }
+
   render() {
     return (
       <header className="app-header navbar">
@@ -27,7 +32,10 @@ class Header extends Component {
             <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link navbar-toggler sidebar-toggler" onClick={this.sidebarToggle} href="#">&#9776;</a>
+            <Select.Creatable style={{width:"200px"}}
+                multi={true}
+                onChange={this.handleOnChange}
+            />
           </li>
         </ul>
       </header>

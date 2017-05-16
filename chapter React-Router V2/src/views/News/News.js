@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import {NewsList} from "../../components/News/NewsList";
 import {isoFetch} from '../../actions/fetch'
-import "../../../scss/news/App.scss";
 
 class News extends Component {
 
@@ -28,8 +27,8 @@ class News extends Component {
         const {articles} = this.state.dataNews
 
         return (
-            <div className="app">
-                <NewsList newsList={articles}/> :
+            <div className="animated fadeIn">
+               <NewsList newsList={articles}/> :
             </div>
         );
     }

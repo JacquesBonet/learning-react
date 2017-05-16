@@ -3,15 +3,14 @@ import PropTypes from "prop-types";
 import {NewsHeader} from "./NewsHeader";
 import {NewsContent} from "./NewsContent";
 import {NewsFooter} from "./NewsFooter";
-import "../../../scss/news/News.scss";
 
 
 export const News = (props) =>
-    <article className="news">
+    <div className="card col-sm-4 col-md-">
         <NewsHeader {...props}/>
         <NewsContent {...props}/>
         <NewsFooter {...props}/>
-    </article>
+    </div>
 
 
 News.propTypes = {
