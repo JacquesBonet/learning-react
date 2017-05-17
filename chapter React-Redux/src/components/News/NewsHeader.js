@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export const NewsHeader = ({title, urlToImage}) =>
     <div className="card-header">
         <img alt="" className="img-fluid" src={urlToImage}/>
-        <h4>{title}</h4>
+        <h5>{title}</h5>
     </div>
 
 

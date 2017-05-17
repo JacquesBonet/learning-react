@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import {NewsList} from "../../components/News/NewsList";
+import NewsList from "../../containers/News/NewsList";
 import {isoFetch} from '../../actions/fetch'
 
 class News extends Component {
