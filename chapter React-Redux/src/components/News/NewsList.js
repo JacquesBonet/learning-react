@@ -4,12 +4,13 @@ import {News} from "./News";
 
 const filteredNewsList = ( newsList, search) => {
     return newsList.filter((news, id) => {
-            const {description} = news
+            const {description, title} = news
 
             if (search.length === 0)   return true
 
             const found = search.reduce((acc, searchElem) => {
-                return (description.indexOf(searchElem.value) !== -1) ?
+                return (description.indexOf(searchElem.value) !== -1 ||
+                        title.indexOf(searchElem.value) !== -1) ?
                     acc + 1 :
                     acc
             }, 0)

@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Full from './containers/Full/'
 
 import Dashboard from './views/Dashboard/'
-import News from './views/News/'
+import News from './containers/News/News'
 import Details from './views/News/Details/'
 
 export default (
